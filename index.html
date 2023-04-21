@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar Bounty</title>
+
+     <!-- font awesome link -->
+     <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+     <!-- link the css file -->
+     <link rel="stylesheet" href="styles.css">
+
+      <!-- favicon link -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <input type="text" placeholder="Enter Your Location" class="input-box">
+            <button class="search-btn" onclick="checkWeather()"><i class="fa-solid fa-magnifying-glass" ></i></button>
+        </div>
+        <div class="location-not-found">
+            <h1>Sorry , Location Not Found !!</h1>
+            <img src="images/error.png" alt="">
+        </div>
+        <div class="weather-info">
+            <div class="temperature-box">
+                <img src="images/error.png" alt="" class="weather-image">
+                <div>
+                    <p class="temperature">
+                        25°C 
+                    </p>
+                    <p class="description">xyz</p>
+                </div>
+            </div>
+            <div class="humidity-box">
+                <img src="images/humidity.png" alt="">
+                <span class="humidity">
+                    75%  Humidity
+                </span>
+            </div>
+            <div class="windspeed-box">
+                <img src="images/windspeed.png" alt="">
+                <span class="windspeed">
+                    14 Km/H Windspeed
+                </span>
+            </div>
+            <div class="pressure-box">
+                <img src="images/pressure.png" alt="">
+                <span class="pressure">
+                    2 mb pressure
+                </span>
+            </div>
+        </div> 
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
